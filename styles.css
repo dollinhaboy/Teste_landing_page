@@ -1,0 +1,172 @@
+/* -------------------------------------- */
+/* ESTILIZAÇÃO GERAL E TIPOGRAFIA */
+/* -------------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fundo que simula o espaço profundo */
+    background-color: #0b0f19; 
+    color: #e0e6f0; /* Cor do texto claro */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: #4a90e2; /* Azul vibrante como cor de destaque */
+    text-align: center;
+    font-weight: 700;
+}
+
+/* -------------------------------------- */
+/* ESTILO DO CABEÇALHO (HERO) */
+/* -------------------------------------- */
+.hero {
+    /* Gradiente sutil para dar profundidade espacial */
+    background: linear-gradient(180deg, #0b0f19 0%, #1c273e 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.headline {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    /* Pequena sombra para efeito neon */
+    text-shadow: 0 0 10px rgba(74, 144, 226, 0.7); 
+}
+
+.subheadline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #b0c4de;
+}
+
+/* -------------------------------------- */
+/* BOTÕES DE CHAMADA PARA AÇÃO (CTA) */
+/* -------------------------------------- */
+.cta-button, .final-cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+/* Estilo do botão do cabeçalho */
+.cta-button {
+    background-color: #4a90e2; /* Azul Principal */
+    color: #ffffff;
+    border: 2px solid #4a90e2;
+}
+
+.cta-button:hover {
+    background-color: #357bd1;
+    transform: translateY(-2px);
+}
+
+/* Estilo do botão FINAL de Compra */
+.final-cta-button {
+    background-color: #ff5757; /* Vermelho/Laranja para urgência */
+    color: #ffffff;
+    border: none;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(255, 87, 87, 0.4); /* Sombra mais forte */
+}
+
+.final-cta-button:hover {
+    background-color: #e54646;
+    transform: translateY(-3px);
+}
+
+/* -------------------------------------- */
+/* SEÇÃO DE BENEFÍCIOS (GRID) */
+/* -------------------------------------- */
+.benefits-section {
+    background-color: #1c273e; /* Fundo ligeiramente mais claro */
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.benefit-item {
+    background-color: #27344d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-item h3 {
+    color: #7ed6df; /* Verde-água/Ciano para os ícones/títulos de benefício */
+    margin-top: 0;
+}
+
+/* -------------------------------------- */
+/* SEÇÃO DE CTA FINAL */
+/* -------------------------------------- */
+.cta-form-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-form-section h2 {
+    font-size: 2em;
+}
+
+.garantia {
+    color: #7ed6df;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* -------------------------------------- */
+/* RODAPÉ */
+/* -------------------------------------- */
+footer {
+    background-color: #0b0f19;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #27344d;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------------------- */
+/* MEDIA QUERIES (RESPONSIVIDADE) */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.5em;
+    }
+
+    .subheadline {
+        font-size: 1em;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr; /* Coluna única em telas menores */
+    }
+}
