@@ -323,3 +323,71 @@ footer .container {
     /* Garante que não há padding lateral, mas mantém o alinhamento central */
     padding-left: 0;
     padding-right: 0;
+
+}
+
+/* -------------------------------------- */
+/* SEÇÃO PRÉVIA DA AMOSTRA (GALERIA) */
+/* -------------------------------------- */
+.preview-section {
+    background-color: #1c273e; /* Cor ligeiramente mais clara para contraste */
+    padding: 60px 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Para que as imagens se quebrem em telas pequenas */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    background-color: #27344d;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02); /* Efeito de destaque ao passar o mouse */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #7ed6df; /* Moldura ciano para destaque visual */
+    display: block;
+}
+
+.gallery-item p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    font-weight: 700;
+    color: #7ed6df;
+}
+
+/* -------------------------------------- */
+/* AJUSTE RESPONSIVIDADE PARA GALERIA */
+/* -------------------------------------- */
+@media (max-width: 800px) {
+    .image-gallery {
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        max-width: 45%; /* Duas imagens por linha em tablets */
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-item {
+        max-width: 100%; /* Uma imagem por linha em telemóveis */
+    }
+}
