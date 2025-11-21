@@ -6,6 +6,7 @@
     <title>Aventuras no Espaço - Livro de Colorir</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="Imagens/1f680.png">
 </head>
 <body>
     
@@ -13,13 +14,13 @@
         <div class="container">
             <h1 class="headline">Explore o Universo com Cores!</h1>
             <p class="subheadline">O novo livro de colorir que leva as crianças a uma Aventura Espacial intergaláctica de aprendizagem.</p>
-            <a href="#cadastro" class="cta-button">Quero Receber a Amostra Grátis!</a>
+            <a href="#amostra" class="cta-button">Quero Receber a Amostra Grátis!</a>
         </div>
     </header>
-    
-    <section class="sample-section">
-        <div class="container">
-            <h2>Receba a Sua Missão de Colorir de Teste!</h2>
+
+<section id="amostra" class="sample-section"> 
+    <div class="container">
+        <h2>Receba a Sua Missão de Colorir de Teste!</h2>
             <p class="sample-subtitle">A amostra grátis inclui 3 páginas exclusivas:</p>
             
             <div class="image-gallery">
@@ -40,10 +41,29 @@
             </div>
 
             <div class="sample-cta-block">
-                <input type="email" placeholder="Digite seu Email para Receber" class="sample-input">
-                <a href="#" class="sample-button">Quero o Meu Kit Grátis!</a>
+                <a href="https://4br.me/wYMi" class="sample-button" target="_blank">Quero o Meu Kit Grátis!</a>
             </div>
             <p class="sample-note">Se já tem o kit, <a href="#comprar">pule para a compra completa.</a></p>
+        </div>
+    </section>
+    
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Porquê Explorar Este Livro?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>✨ Estimula a Imaginação</h3>
+                    <p>Foguetes, alienígenas amigáveis e planetas misteriosos prontos para serem coloridos.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🧠 Desenvolve a Concentração</h3>
+                    <p>Detalhes cósmicos que ajudam a aprimorar a coordenação motora fina das crianças.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>📚 Aprende Brincando</h3>
+                    <p>Introdução divertida a conceitos básicos de astronomia e o nosso sistema solar.</p>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -70,7 +90,7 @@
     <section class="full-package-section">
         <div class="container">
             <h2>O Seu Pacote de Exploração Completo!</h2>
-            <p class="package-subtitle">Ao comprar o **Livro de Colorir Aventura Espacial** (Download Imediato), você recebe:</p>
+            <p class="package-subtitle">Ao comprar o Livro de Colorir Aventura Espacial (Download Imediato), você recebe:</p>
             
             <div class="package-grid">
                 <div class="package-item">
@@ -92,12 +112,12 @@
         </div>
     </section>
     
-    <section id="https://pay.kiwify.com.br/DVvKHBd" class="cta-form-section">
+    <section id="comprar" class="cta-form-section">
     <div class="container">
         <h2>Leve Seu Foguete para Casa Hoje!</h2>
         <p>Preço de Lançamento Exclusivo: Apenas R$ 14,99.</p>
         
-        <a href="#" class="final-cta-button">COMPRAR AGORA E BAIXAR IMEDIATAMENTE</a>
+        <a href="https://pay.kiwify.com.br/DVvKHBd" class="final-cta-button">COMPRAR AGORA E BAIXAR IMEDIATAMENTE</a>
     </div>
 </section>
 
@@ -105,11 +125,30 @@
         <div class="container">
             <p>&copy; 2025 Igor Muniz. Todos os direitos reservados.</p>
             <nav>
-                <a href="#">Política de Privacidade</a> | 
-                <a href="#">Contacto</a>
+                <a href="policy.html">Política de Privacidade</a> | 
+                <a href="mailto:devigormuniz@gmail.com?subject=Quest%C3%A3o%20sobre%20o%20Livro%20de%20Colorir%20Espacial&body=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20produto.">Contato</a>
             </nav>
         </div>
     </footer>
+    <script>
+        // FUNÇÃO 1: BLOQUEAR O CLIQUE DIREITO (MENU DE CONTEXTO)
+        // Isso impede que o usuário use "Salvar Imagem Como..."
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // FUNÇÃO 2: BLOQUEAR O ARRASTO DAS IMAGENS
+        // Isso impede o método "arrastar e soltar" a imagem para o desktop.
+        const images = document.querySelectorAll('.gallery-item img');
+        images.forEach(img => {
+            img.setAttribute('draggable', false);
+        });
+
+        // OBSERVAÇÃO: O bloqueio do clique direito é feito em toda a página para simplicidade, 
+        // mas é especialmente eficaz nas imagens.
+    </script>
     
+</body>
+</html>
 </body>
 </html>
